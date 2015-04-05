@@ -1,0 +1,62 @@
+
+ol,ul { list-style:none; }
+#products_example {
+	width:600px;
+
+	position:relative;
+}
+
+#products {
+	margin-left:26px;
+}
+
+#products .next,#products .prev {
+	position:absolute;
+	top:127px;
+	left:0;
+	width:21px;
+	height:0;
+	padding-top:21px;
+	overflow:hidden;
+	display:block;
+	z-index:101;
+}
+
+
+#products .slides_container {
+	width:366px;
+	height:420px;
+	overflow:hidden;
+	float:left;
+	position:relative;
+
+}
+
+#products .pagination {
+    width: 106px;
+    float: left;
+    margin-left: 8px;
+}
+#products .pagination li {
+	float:left;
+	margin:2px 4px;
+}
+
+#products .pagination li a {
+	display:block;
+	width:105px;
+	height:134px;
+	margin:1px;
+	float:left;
+	background:#f9f9f9;
+}
+
+#products .pagination li.current a {
+    border-bottom: 3px solid #fc4f3f;
+	margin:0;
+}
+#products .pagination li a {
+    border-bottom: 3px solid #2e3138;
+    margin:0;
+}
+
