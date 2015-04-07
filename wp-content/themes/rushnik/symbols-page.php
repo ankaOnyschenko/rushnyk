@@ -10,16 +10,17 @@
 <div class="symbols-content">
     <input class="search" type="search" name="q" placeholder="">
     <ul class="alphabet">
-        <li><a href="">а</a></li>
-        <li><a href="">б</a></li>
-        <li><a href="">в</a></li>
-        <li><a href="">г</a></li>
-        <li><a  href="">ґ </a></li>
-        <li class="active"><a href="">д</a></li>
+        <li><a href="#a">а</a></li>
+        <li><a href="#b">б</a></li>
+        <li><a href="#v">в</a></li>
+        <li><a href="#g">г</a></li>
+        <li><a  href="g2">ґ </a></li>
+        <li><a href="#d">д</a></li>
         <li><a href="">е</a></li>
         <li><a href="">є</a></li>
         <li><a href="">ж</a></li>
         <li><a href="">з</a></li>
+        <li><a href="">й</a></li>		
         <li><a href="">и</a></li>
         <li><a href="">і</a></li>
         <li><a href="">ї</a></li>
@@ -39,123 +40,57 @@
         <li><a href="">ч</a></li>
         <li><a href="">ш</a></li>
         <li><a href="">щ</a></li>
-        <li><a href="">ь</a></li>
         <li><a href="">ю</a></li>
         <li><a href="">я</a></li>
 
 
     </ul>
-    <h4>Д</h4>
+
+    <h4><a name="a">А</a></h4>
 
    <ul class="first-colom">
-       <li>Да</li>
-       <li>Даба</li>
-       <li>Дабы</li>
-       <li>Давать</li>
-       <li>Давить</li>
-       <li>Давно</li>
-       <li>Даган</li>
-       <li>Дагеротип</li>
-       <li>Дагликс</li>
-       <li>Дадон</li>
-       <li>Дажбог</li>
-       <li>Даже</li>
-       <li>Дазиметр</li>
-       <li>Дайга</li>
-       <li>Дакапо</li>
-       <li>Дакать</li>
-       <li>Дакс</li>
-       <li>Дактиль</li>
-       <li>Далак</li>
-       <li>Далдонить</li>
-       <li>Далекий</li>
-       <li>Далиха</li>
-       <li>Далия</li>
-       <li>Далма</li>
-       <li>Дама</li>
-   </ul>
-    <ul class="second-colom">
-        <li>Да</li>
-        <li>Даба</li>
-        <li>Дабы</li>
-        <li>Давать</li>
-        <li>Давить</li>
-        <li>Давно</li>
-        <li>Даган</li>
-        <li>Дагеротип</li>
-        <li>Дагликс</li>
-        <li>Дадон</li>
-        <li>Дажбог</li>
-        <li>Даже</li>
-        <li>Дазиметр</li>
-        <li>Дайга</li>
-        <li>Дакапо</li>
-        <li>Дакать</li>
-        <li>Дакс</li>
-        <li>Дактиль</li>
-        <li>Далак</li>
-        <li>Далдонить</li>
-        <li>Далекий</li>
-        <li>Далиха</li>
-        <li>Далия</li>
-        <li>Далма</li>
-        <li>Дама</li>
-    </ul>
-    <ul class="third-colom">
-        <li>Да</li>
-        <li>Даба</li>
-        <li>Дабы</li>
-        <li>Давать</li>
-        <li>Давить</li>
-        <li>Давно</li>
-        <li>Даган</li>
-        <li>Дагеротип</li>
-        <li>Дагликс</li>
-        <li>Дадон</li>
-        <li>Дажбог</li>
-        <li>Даже</li>
-        <li>Дазиметр</li>
-        <li>Дайга</li>
-        <li>Дакапо</li>
-        <li>Дакать</li>
-        <li>Дакс</li>
-        <li>Дактиль</li>
-        <li>Далак</li>
-        <li>Далдонить</li>
-        <li>Далекий</li>
-        <li>Далиха</li>
-        <li>Далия</li>
-        <li>Далма</li>
-        <li>Дама</li>
-    </ul>
-    <ul class="fourth-colom">
-        <li>Да</li>
-        <li>Даба</li>
-        <li>Дабы</li>
-        <li>Давать</li>
-        <li>Давить</li>
-        <li>Давно</li>
-        <li>Даган</li>
-        <li>Дагеротип</li>
-        <li>Дагликс</li>
-        <li>Дадон</li>
-        <li>Дажбог</li>
-        <li>Даже</li>
-        <li>Дазиметр</li>
-        <li>Дайга</li>
-        <li>Дакапо</li>
-        <li>Дакать</li>
-        <li>Дакс</li>
-        <li>Дактиль</li>
-        <li>Далак</li>
-        <li>Далдонить</li>
-        <li>Далекий</li>
-        <li>Далиха</li>
-        <li>Далия</li>
-        <li>Далма</li>
-        <li>Дама</li>
-    </ul>
+		<?php if ( have_posts() ) : query_posts('cat=11'); while (have_posts()) : the_post(); ?>   
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+		<?php endwhile; ?>
+		<?php else: ?>
+		<?php endif; ?>
+   </ul>   
 
+       <h4><a name="b">Б</a></h4>
+
+   <ul class="first-colom">
+		<?php if ( have_posts() ) : query_posts('cat=12'); while (have_posts()) : the_post(); ?>   
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+
+		<?php endwhile; ?>
+		<?php else: ?>
+		<?php endif; ?>
+   </ul>
+  
+       <h4><a name="v">В</a></h4>
+
+   <ul class="first-colom">
+		<?php if ( have_posts() ) : query_posts('cat=13'); while (have_posts()) : the_post(); ?>   
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+		<?php endwhile; ?>
+		<?php else: ?>
+		<?php endif; ?>
+   </ul>  
+ 
+       <h4><a name="g">Г</a></h4>
+
+   <ul class="first-colom">
+		<?php if ( have_posts() ) : query_posts('cat=14'); while (have_posts()) : the_post(); ?>   
+			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+		<?php endwhile; ?>
+		<?php else: ?>
+		<?php endif; ?>
+   </ul>  
+ 
+   
+
+	
+	
 	<div>
 	
 	</div>

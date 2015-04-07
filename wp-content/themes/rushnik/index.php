@@ -19,17 +19,17 @@
                 <li class="ddt"><img src="<?php bloginfo('template_url') ?>/images/icon1.png" alt=""/>
 					<?php query_posts(array('post__in' => array(67))); while (have_posts()) { the_post(); ?>
 					<?php the_content(''); ?>
-					<?php } wp_reset_query(); ?> 
+					<?php } wp_reset_query(); ?></li> 
 
                 <li class="odd"><img src="<?php bloginfo('template_url') ?>/images/icon2.png" alt=""/>
 					<?php query_posts(array('post__in' => array(69))); while (have_posts()) { the_post(); ?>
 					<?php the_content(''); ?>
-					<?php } wp_reset_query(); ?> 
+					<?php } wp_reset_query(); ?></li> 
 
                 <li><img src="<?php bloginfo('template_url') ?>/images/icon3.png" alt=""/>
 					<?php query_posts(array('post__in' => array(71))); while (have_posts()) { the_post(); ?>
 					<?php the_content(''); ?>
-					<?php } wp_reset_query(); ?>                  
+					<?php } wp_reset_query(); ?> </li>                 
             </ul>
 
         </div>

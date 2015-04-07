@@ -790,9 +790,12 @@ p.text{
     margin: 0 auto;
 }
 
-.first-colom, .second-colom, .third-colom, .fourth-colom{
+.first-colom a, .second-colom, .third-colom, .fourth-colom{
     float: left;
     margin: 0 80px;
+}
+.first-colom a{
+    color: #000;
 }
 .alphabet{
     margin: 40px 12px 27px;
@@ -816,11 +819,24 @@ p.text{
 }
 
 h4{
-    margin: 0 0 40px;
+    margin: 40px 0 40px;
     text-align: center;
     color:#fc4f3f;
     font-size: 36px;
     font-weight: 300;
+}
+h4 a {
+    margin: 80px 0 40px;
+    text-align: center;
+    color:#fc4f3f;
+    font-size: 36px;
+    font-weight: 300;
+	clear: both;
+	display: block;
+}
+h4 a:hover {
+	text-decoration: none;
+	color:#fc4f3f;
 }
 .search{
     width: 91%;
@@ -842,6 +858,8 @@ h4{
 }
 .tree-of-life ul li a img{
     margin-bottom: 9px;
+	height: 137px;
+	width: 105px;
 
 }
 .tree-of-life p{
@@ -864,6 +882,17 @@ h4{
 .description h4{
     font-size: 18px;
     color:#2e3138;
-
     margin: 20px;
+}
+
+.symbol div {
+  float: left;
+  text-align: left;
+}
+.symbol a{
+  float: left;
+  text-align: left;
+  margin: 10px;
+  size: 16px;
+  color: #fc4f3f;
 }
