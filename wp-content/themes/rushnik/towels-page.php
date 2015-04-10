@@ -13,12 +13,12 @@
 					
 					<a class="share-button" href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url') ?>/images/share-button.png" alt=""  onmouseout="this.src='<?php bloginfo('template_url') ?>/images/share-button.png'"
                                                          onmouseover="this.src='<?php bloginfo('template_url') ?>/images/share-button-hover.png'"/></a>					
-						<a href="<?php the_permalink(); ?>">	
-							<div class="rushnyk"><?php the_post_thumbnail();?></div>
-							<h3 class="rushnik"><?php the_title(); ?></h3>
-							<p>Полтавщина 1910 рік</p> 
+							
+							<a href="<?php the_permalink(); ?>"><div class="rushnyk"><?php the_post_thumbnail();?></div>
+							<h3 class="rushnik"><?php the_title(); ?></h3></a>
+							<p><?php echo (get_post_meta($post->ID, 'year', true)); ?></p> 
 							<span><?php if(function_exists('the_views')) { the_views(); } ?></span>
-						</a>
+						
                     </li>
                
 

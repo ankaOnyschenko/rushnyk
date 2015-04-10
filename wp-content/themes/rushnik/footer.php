@@ -28,7 +28,7 @@
             <p class="copyright">
 
 
-                © Copyright 2015
+                © Copyright <?php echo date('Y')?>
 
             </p>
         </div>

@@ -10,18 +10,20 @@
 <div class="help">
 
 
-    <form method="POST" id="feedback-form">
+    <form name="MyForm" action="<?php bloginfo('template_url') ?>/mail.php" method="post" id="feedback-form">
         <label>Ім'я</label><br />
-        <input class="name" type="text" name="nameFF" required placeholder="Тарас" x-autocompletetype="name"><br />
+        <input class="name" type="text" name="name" required placeholder="Тарас" x-autocompletetype="name"><br />
         <label>Email</label><br />
-        <input class="email" type="email" name="contactFF" required placeholder="example@mail.info" x-autocompletetype="email"><br />
+        <input class="email" type="email" name="email" required placeholder="example@mail.info" x-autocompletetype="email"><br />
         <label>Номер телефону</label><br />
-        <input class="tel" type="telefon" name="contactFF" required placeholder="+38 (063) 555 55 55" x-autocompletetype="email"><br />
+        <input class="tel" type="telefon" name="tel" required placeholder="+38 (063) 555 55 55" x-autocompletetype="email"><br />
         <input class="file" type="submit" value="Обрати файл">
        <div class="message"> <label>Повідомлення</label><br />
-        <textarea name="messageFF" required placeholder="Текст..." rows="17"></textarea></div><br />
-        <input class="submit" type="submit" value="отправить">
+        <textarea name="body" required placeholder="Текст..." rows="17"></textarea></div><br />
+        <input class="submit" type="submit" value="відправити">
     </form>
+	
+
 
 
     <div class="details">

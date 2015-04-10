@@ -82,10 +82,10 @@
 
         <div class="sponsors">
             <ul>
-                <li><img src="<?php bloginfo('template_url') ?>/images/sponsor1.png" alt=""/><a href="">Image1</a></li>
-                <li><img src="<?php bloginfo('template_url') ?>/images/sponsor2.png" alt=""/><a href="">Image2</a></li>
-                <li><img src="<?php bloginfo('template_url') ?>/images/sponsor3.png" alt=""/><a href="">Image3</a></li>
-                <li class="last"><img src="<?php bloginfo('template_url') ?>/images/sponsor4.png" alt=""/><a href="">Image1</a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url') ?>/images/sponsor1.png" alt=""/></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url') ?>/images/sponsor2.png" alt=""/></a></li>
+                <li><a href=""><img src="<?php bloginfo('template_url') ?>/images/sponsor3.png" alt=""/></a></li>
+                <li class="last"><a href=""><img src="<?php bloginfo('template_url') ?>/images/sponsor4.png" alt=""/></a></li>
 
             </ul>
         </div>
