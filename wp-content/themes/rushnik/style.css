@@ -896,5 +896,10 @@ h4 a:hover {
   size: 16px;
   color: #fc4f3f;
 }
+.file {
+	width: 329px;
+	margin-left: 25px;
+  background: #fff;
+}
 
 
